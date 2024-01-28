@@ -1,0 +1,8 @@
+name: Echo Issue Title
+on: issues
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Github context
+        run: echo '${{github.event.issue.title}}'
